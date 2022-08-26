@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    background-color:hsl(30, 38%, 92%);
+    height:100vh;
+}
+
+
+main {
+    background-color:white;
+    width:320px;
+    height:auto;
+    border-radius:10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
+    transition: 0.3s ease-in-out all;
+}
+
+.img-side {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:auto;
+    height:250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom:-2em;
+ 
+   
+}
+
+.text-side {
+    margin-top: -2em;
+    padding:1rem 1rem;
+
+}
+/* Text and Img styling*/
+
+button {
+    background-color:hsl(158, 36%, 37%);
+    border:2px solid hsl(158, 36%, 37%);
+    padding:1em 1em;
+    color:white;
+    text-align:center;
+    font-size:15px;
+    font-weight: 700;
+    width:288px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top: -10px;
+    transition:0.3s ease all;
+
+}
+
+button:hover {
+    background-color:white;
+    color:hsl(158, 36%, 37%);
+    border: 2px dotted hsl(158, 36%, 37%);
+}
+
+i {
+    padding-right: 5px;
+}
+
+
+h1 {
+    font-family: 'Fraunces';
+}
+
+p {
+    font-size:14px;
+    font-family:'Montserrat';
+    color:hsl(228, 12%, 48%);
+}
+small {
+    font-size:13px;
+    color: hsl(228, 12%, 48%);
+    font-family:'Monsterrat';
+    text-decoration:line-through;
+    position:relative;
+    bottom:9px;
+    left:10px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top:5em;
+    
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:35rem){
+
+    main {
+        overflow:hidden; 
+        display:flex;
+        width:auto;
+        height:450px;
+        border-radius:10px;
+    }
+
+    .img-side {
+        width:300px;
+        border-radius:0;
+        background-repeat:no-repeat;
+        background-image:url(./images/image-product-desktop.jpg);
+        height:500px;
+       
+       
+    }
+   
+    .text-side {
+        width:300px;
+        height:auto;
+        padding:3em 2rem;
+    }
+
+    button {
+        width:230px;
+        font-size:13px;
+        margin-top:0.3em;
+    }
+}
